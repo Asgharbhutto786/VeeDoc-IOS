@@ -3,28 +3,31 @@ package Pages;
 
 import org.openqa.selenium.By;
 
+import Utilities.Xls_Reader;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 
 public class Page_VeeDocLogin extends BasePage{
 
 	Utility utility = new Utility();
+	String loginSheet = "login";
+	Xls_Reader reader = new Xls_Reader("./src/test/resources/TestData/TestData.xlsx");
+	
+	 //following lines are for getting the data from excel sheet
+	String email = reader.getCellData(loginSheet, 0, 2);
+	String pass = reader.getCellData(loginSheet, 1, 2);
 	
 	
-	MobileElement email=  driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"VeeDoc\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField");
+	MobileElement email_txt=  driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"VeeDoc\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeTextField");
 	
-	MobileElement password=  driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"VeeDoc\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField");
+	MobileElement password_txt=  driver.findElementByXPath("//XCUIElementTypeApplication[@name=\"VeeDoc\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeSecureTextField");
 	
 	MobileElement login_btn = driver.findElementByXPath("//XCUIElementTypeButton[@name=\"Sign in\"]");
 
-
-	
 	
 	String dialog_Never = "Never";
 
-	
 	String Cam_allow = "OK";
-	
 	
 	String notif_allow = "Allow";
 	
@@ -38,11 +41,11 @@ public class Page_VeeDocLogin extends BasePage{
 		this.driver= driver;
 	}
 	
-	public void enterCreds(String email, String pass) throws Exception {
+	public void enterCreds() throws Exception {
 		
-		utility.Wait();
-		utility.setText(this.email, email);
-		utility.setText(this.password, pass);
+		//utility.Wait();
+		utility.setText(this.email_txt, email);
+		utility.setText(this.password_txt, pass);
 		
 	
 	}
@@ -51,7 +54,7 @@ public class Page_VeeDocLogin extends BasePage{
 		
 		
 		utility.clickButton(login_btn);
-		utility.Wait();
+		//utility.Wait();
 	
 	Thread.sleep(10000);
 	
