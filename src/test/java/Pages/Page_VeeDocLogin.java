@@ -58,18 +58,17 @@ public class Page_VeeDocLogin extends BasePage{
 
 	MobileElement NotificatioAllow = driver.findElement(By.name(notif_allow));
 	utility.clickButton(NotificatioAllow);
-	Thread.sleep(5000);
+
 	
 	MobileElement never_opt = driver.findElement(By.name(dialog_Never));
 	utility.clickButton(never_opt);
 		
 
-	Thread.sleep(5000);
+
 	MobileElement cam_opt = driver.findElement(By.name(Cam_allow));
 	utility.clickButton(cam_opt);
 	
 	
-	Thread.sleep(5000);
 	MobileElement vid_opt = driver.findElement(By.name(Video_allow));
 	utility.clickButton(vid_opt);
 	
