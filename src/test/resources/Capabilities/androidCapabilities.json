@@ -1,0 +1,11 @@
+{
+ 
+   	"pname": "iOS",
+   	"version": "15.2",
+  	"deviceName": "iPhone 12",
+ 	"uid": "7ADCFFFF-BA10-4A34-B977-2DEDB6104C89",
+	"noReset": "false",
+  	"automationName": "XCUITest",
+  	"app": "/src/test/resources/apk/VeeDoc.app"
+  
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-21T11:19:54 PKT" name="Default suite" finished-at="2022-02-21T11:20:31 PKT" duration-ms="36986">
+    <groups>
+    </groups>
+    <test started-at="2022-02-21T11:19:54 PKT" name="Default test" finished-at="2022-02-21T11:20:31 PKT" duration-ms="36986">
+      <class name="Tests.TestVeeDoc_Login">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:19:54 PKT" name="setupReport" finished-at="2022-02-21T11:19:54 PKT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:19:54 PKT" name="setup" finished-at="2022-02-21T11:20:07 PKT" duration-ms="12957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="before_test()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:20:07 PKT" name="before_test" finished-at="2022-02-21T11:20:08 PKT" depends-on-methods="Tests.BaseClass.setup" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before_test -->
+        <test-method signature="Veedoc_Login()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:20:08 PKT" name="Veedoc_Login" finished-at="2022-02-21T11:20:31 PKT" duration-ms="23548" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: *** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Umairs-MacBook-Pro.local', ip: 'fe80:0:0:0:49d:15de:bde0:fbd2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/umairasif/Downloads/..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 100000, no: true, platform: MAC, platformName: iOS, platformVersion: 15.2, takesScreenshot: true, udid: 7ADCFFFF-BA10-4A34-B977-2DE..., webStorageEnabled: false}
+Session ID: 65ca8fd9-a766-4c01-bd8d-8bfc346b2d82]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: *** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'Umairs-MacBook-Pro.local', ip: 'fe80:0:0:0:49d:15de:bde0:fbd2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/umairasif/Downloads/..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 100000, no: true, platform: MAC, platformName: iOS, platformVersion: 15.2, takesScreenshot: true, udid: 7ADCFFFF-BA10-4A34-B977-2DE..., webStorageEnabled: false}
+Session ID: 65ca8fd9-a766-4c01-bd8d-8bfc346b2d82
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at Pages.Utility.clickButton(Utility.java:49)
+at Pages.Page_VeeDocLogin.clickonLoginBtn(Page_VeeDocLogin.java:60)
+at Tests.TestVeeDoc_Login.Veedoc_Login(TestVeeDoc_Login.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Veedoc_Login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:20:31 PKT" name="teardown" finished-at="2022-02-21T11:20:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:Tests.TestVeeDoc_Login@60dcc9fe]" started-at="2022-02-21T11:20:37 PKT" name="teardownReport" finished-at="2022-02-21T11:20:37 PKT" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- Tests.TestVeeDoc_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
