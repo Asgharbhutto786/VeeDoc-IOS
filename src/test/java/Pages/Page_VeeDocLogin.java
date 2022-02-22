@@ -56,7 +56,7 @@ public class Page_VeeDocLogin extends BasePage{
 		utility.clickButton(login_btn);
 		//utility.Wait();
 	
-	Thread.sleep(10000);
+//	Thread.sleep(10000);
 	
 
 	MobileElement NotificatioAllow = driver.findElement(By.name(notif_allow));

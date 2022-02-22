@@ -21,8 +21,6 @@ public class TestVeeDoc_Login extends BaseClass{
 	Utility utility;
 	
 	String loginSheet = "login";
-	String email;
-	String password;
 	String verifyName;
 	
 	@BeforeTest                                               
@@ -34,8 +32,6 @@ public class TestVeeDoc_Login extends BaseClass{
 		utility = new Utility();
         
       //following lines are for getting the data from excel sheet
-//      	email = reader.getCellData(loginSheet, 0, 2);
-//      	password = reader.getCellData(loginSheet, 1, 2);
       	verifyName = reader.getCellData(loginSheet, 3, 2);
 		
 	  }  
@@ -65,13 +61,7 @@ public class TestVeeDoc_Login extends BaseClass{
 		
 		
 	}
-	@Test
-	public void Veedoc_Navigation() throws Exception {
-		Page_VeeDocDashboard dashboard =  new Page_VeeDocDashboard(driver);
-		
-		dashboard.navigateToAppointments("Appointments");
-		
-	}
+
 }
 
 
