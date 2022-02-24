@@ -9,7 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import Pages.Page_VeeDocDashboard;
 import Pages.Page_VeeDocLogin;
 import Pages.Utility;
-import Pages.Page_VeedocQuickAppointment;
+import Pages.Page_VeedocAppointment;
 import Pages.Page_AddQuickAppointment;
 import Utilities.Xls_Reader;
 
@@ -55,19 +55,19 @@ public class TestVeedoc_QuickAppointment extends BaseClass{
 		Page_VeeDocDashboard dashboard =  new Page_VeeDocDashboard(driver);
 		
 		dashboard.navigateToAppointments("Appointments");
+		System.out.println("Clicked on Appointments Button");
 		
-		//**********Page class of Veedoc Dashboard*********
-		Page_VeedocQuickAppointment quickappointment =  new Page_VeedocQuickAppointment(driver);
+		//**********Page class of Veedoc Quick appointment page *********
+		Page_VeedocAppointment quickappointment =  new Page_VeedocAppointment(driver);
 				
-		dashboard.navigateToAppointments("Appointments");
-		
-		
-		//**********Page class of Veedoc Appointment Page*********
+
 		quickappointment.quickappointmentbtn();
+		System.out.println("Clicked on create Appointments Button");
 		
 		//**********Page class of Veedoc create Quick Appointment Page*********
 		
 		Page_AddQuickAppointment addquickappointment =  new Page_AddQuickAppointment(driver);
 				
 		addquickappointment.quickappointmentform();
+		System.out.println("Fill quick appointment form");
 }}

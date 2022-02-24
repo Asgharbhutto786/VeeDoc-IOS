@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.TestVeeDoc_Login">
+      <class name="Tests.TestVeedoc_QuickAppointment">
         <methods>
+          <include name="QuickAppointment"/>
           <include name="setup"/>
           <include name="teardownReport"/>
-          <include name="Veedoc_Login"/>
+          <include name="before_test"/>
           <include name="setupReport"/>
           <include name="teardown"/>
-          <include name="before_test"/>
         </methods>
-      </class> <!-- Tests.TestVeeDoc_Login -->
+      </class> <!-- Tests.TestVeedoc_QuickAppointment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

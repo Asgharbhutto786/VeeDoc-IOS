@@ -37,6 +37,7 @@ public class BaseClass extends Reports {
 		 capa.setCapability(MobileCapabilityType.PLATFORM_NAME, jsonReader.getValue("pname"));
 		 capa.setCapability(MobileCapabilityType.PLATFORM_VERSION, jsonReader.getValue("version"));
 		 capa.setCapability(MobileCapabilityType.DEVICE_NAME, jsonReader.getValue("deviceName"));
+		
 	
 		 capa.setCapability("no",true);
 		 capa.setCapability("newCommandTimeout", 100000);

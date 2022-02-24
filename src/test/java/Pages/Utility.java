@@ -4,6 +4,7 @@ package Pages;
 import org.openqa.selenium.By;
 
 import Tests.BaseClass;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -71,5 +72,14 @@ public class Utility {
 
 	public void clickTextView(String textView) {
 		driver.findElement(By.xpath("//android.widget.TextView[contains(@text,'"+textView+"')]")).click();;
+	}
+	
+	
+	
+	public void hideKeyboard() throws Exception {
+		String keyDone = "label == \"Done\"";
+		MobileElement  hideKyeboard =  driver.findElement(MobileBy.iOSNsPredicateString(keyDone));
+		waitForElementEnabled(driver, hideKyeboard);
+		hideKyeboard.click();
 	}
 }
